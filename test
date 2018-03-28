@@ -1,0 +1,12 @@
+import pyMultiWii
+import time
+addr = '00:15:83:35:67:77'
+port = 1
+Mydrone =pyMultiWii.pyMultiWii(addr,port,True)
+Mydrone.setThrottle(1000)
+Mydrone.arm()
+user_command = input()
+Mydrone.setThrottle(0)
+Mydrone.setPitch(0)
+Mydrone.setRoll(0)
+Mydrone.setYaw(0)
